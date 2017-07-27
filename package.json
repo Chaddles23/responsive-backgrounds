@@ -1,6 +1,6 @@
 {
   "name": "responsive-backgrounds",
-  "version": "0.1",
+  "version": "0.1.0",
   "dependencies": {
   },
   "description": "Lazy-load responsive backgrounds",
