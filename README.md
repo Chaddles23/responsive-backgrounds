@@ -1,5 +1,5 @@
 # responsive-backgrounds
-Lazy-load responsive backgrounds    
+Lazy-load responsive backgrounds
 Define different screen sizes for background images to be swapped out
 
 Define your screen sizes with:
