@@ -12,7 +12,7 @@ Define your screen sizes with:
 
 Initialize the javascript with:
 ```javascript
-new SodaBG(selector,options);
+new ResponsiveBackground(selector,options);
 ```
 Options defaults are:
 ```javascript
