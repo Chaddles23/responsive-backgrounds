@@ -1,0 +1,39 @@
+{
+  "name": "responsive-backgrounds",
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "description": "Lazy-load responsive backgrounds",
+  "contributors": [
+    {
+      "name": "Caleb Chadwick"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Caleb Chadwick",
+      "email": "chadwickcaleb@gmail.com"
+    }
+  ],
+  "main": "assets/javascripts/responsive-backgrounds.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:Chaddles23/responsive-backgrounds.git"
+  },
+  "files": [
+    "assets"
+  ],
+  "keywords": [
+    "caleb",
+    "chadwick",
+    "lazy-load",
+    "lazy",
+    "background",
+    "responsive",
+    "bg"
+  ],
+  "author": "Caleb Chadwick",
+  "license": "MIT",
+  "readme": "ERROR: No README data found!"
+}
