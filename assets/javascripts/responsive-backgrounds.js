@@ -82,7 +82,7 @@
                         });
 
                         image = {
-                            size: size,
+                            size: parseInt(size),
                             source: attr.value,
                         };
                         if (instance.options.lazy) {
@@ -100,8 +100,12 @@
                         instance.images[i].push(image);
                     }
                 });
-            }
 
+                // sort images by size (small to large)
+                this.images[i].sort(function (a, b) {
+                    return a.size - b.size;
+                });
+            }
 
             this.choose_image(); // fire initially
             var resizeTimer;
@@ -127,6 +131,7 @@
             var width = screen.width;
 
             for (var i = 0; i < this.targets.length; i++) {
+                this.active_image[i] = false; // reset
 
                 // find the closest matching image based on the window size
                 var j = this.images[i].length - 1;
