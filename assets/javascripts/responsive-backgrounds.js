@@ -124,6 +124,9 @@
         // apply the image to the DOM
         ResponsiveBackground.prototype.image_loaded = function (image, i) {
             this.targets[i].style.backgroundImage = 'url("' + image + '")';
+
+            // broadcast success
+            this.broadcast_success();
         }
 
         // choose the appropriate image for the screen size
@@ -159,6 +162,24 @@
                 }
             }
         }
+
+        ResponsiveBackground.prototype.broadcast_success = function () {
+            var imageAppliedEvent = new Event('ResponsiveBackground: Image Applied');
+            document.dispatchEvent(imageAppliedEvent);
+        }
+
+        ResponsiveBackground.images_loaded = function (callback) {
+            if (document.addEventListener) {
+                document.addEventListener('ResponsiveBackground: Image Applied', callback, false);
+            } else {
+                document.attachEvent('ResponsiveBackground: Image Applied', callback);
+            }
+        }
+
+        ResponsiveBackground.prototype.images_loaded = function (callback) {
+            ResponsiveBackground.images_loaded(callback);
+        }
+
 
 // -------------------------- jQuery -------------------------- //
 
