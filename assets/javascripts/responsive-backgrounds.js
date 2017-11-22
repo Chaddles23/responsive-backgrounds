@@ -91,6 +91,8 @@
                                 img.onload = function () {
                                     instance.image_loaded(img.src, x);
                                 };
+
+                                // add in new image
                                 image.image = img;
                             })(i);
                         }
