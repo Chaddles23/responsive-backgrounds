@@ -91,9 +91,7 @@
                                 img.onload = function () {
                                     instance.image_loaded(img.src, x);
                                 };
-                                image = Object.assign(image, {
-                                    image: img
-                                });
+                                image.image = img;
                             })(i);
                         }
 
